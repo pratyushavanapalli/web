@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <style>
+        .container{
+            position: relative;
+        }
+        .top{
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            color: rgb(34, 47, 70);
+            font-size: 65px;
+
+        }
+        #tp{
+            position: absolute;
+            top: 150px;
+            left: 100px;
+            color: rgb(21, 60, 132);
+            font-size: 60px;
+
+        }
+        .topnav {
+            position: fixed;
+            z-index: 1000; /* Ensure a higher z-index than other elements */
+            top: 0;
+            right: 0;
+            background-color:transparent; /* Add a background color with some transparency */
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .topnav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .topnav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .topnav a {
+            text-decoration: none;
+            color: rgb(34, 47, 70);
+        }
+        .topnav a {
+            text-decoration: none;
+            color: rgb(34, 47, 70);
+            transition: color 0.3s ease; /* Add a smooth transition for color changes */
+        }
+
+        .topnav a:hover {
+            color: rgb(21, 60, 132); /* Change the color on hover */
+        }
+
+        #aboutme{
+            background-color: rgb(158, 188, 206);
+            background-size: 100%;
+            width: auto;
+            height: 100vh;
+            position: relative;
+        
+            justify-content: center;
+            align-items: center;
+        }
+
+        .metoo{
+        
+            width: 50%; /* Set the width of the inner container as a percentage of the screen width */
+            height: 60%; /* Set the height of the inner container as a percentage of the screen height */
+            background-color: #ffffff; /* Set the background color for the inner container */
+            position: absolute;
+            top: 22%;
+            left: 25%;
+            display: flex;
+           
+
+        }
+        .inner-child {
+            flex: 1;
+            background-color: #ffffff; /* Set the background color for the inner child elements */
+            margin: 5px; /* Add some margin between the child elements */
+        }
+        #conti{
+            background-color: rgb(158, 188, 206);
+            background-size: 100%;
+            width: auto;
+            height: 20vh;
+            position: relative;
+        
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+         
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <nav class="topnav">
+            <ul>
+                <li><a href="#tp">Home</a></li>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#Mywork">My work</a></li>
+                <li><a href="#conti">Contact info</a></li>
+            </ul>
+        </nav>
+        <img src="moye.jpg" alt="Vanapalli Pratyusha - Portfolio Image" style="width: 100%;">
+    </div>
+    <div id="tp">Hello, I am</div>
+    <div class="top">Rahman patnaik</div>  
+    <div id="aboutme" >
+        <div class="metoo">
+            <div class="inner-child">
+                <img src="moye2.jpg" style="padding-top: 15%;" >
+            </div>
+
+            <div class="inner-child">
+                <h1>About me</h1>
+                <p>i am a student at ANITS</p>
+                <p>i am pursuing my third year in Btech-cse</p>
+                <p>my technical skills are data analysis,front-end development</p>
+                <p>i am good at c,python,html,css,javascript languages</p>
+                <p>my hobbies are exploring rising technologies</p>
+            
+
+            </div>
+
+        </div>
+        
+    </div>
+    <div id="Mywork">
+        <h1 style="text-align: center;">My Work</h1>
+        <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+            <img src="web.webp" alt="Second Image" style="width: 30%;">
+            <img src="da.jpg" alt="Third Image" style="width: 30%;">
+            <img src="yhills.jpeg" alt="Fourth Image" style="width: 30%;">
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+            <img src="port2.jpg" alt="Second Image" style="width: 30%;">
+            <img src="port1.jpeg" alt="Third Image" style="width: 30%;">
+            <img src="pot1.jpeg" alt="Fourth Image" style="width: 30%;">
+        </div>
+    </div>
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <div id="conti" style="text-align: center;">
+        
+        <h1>Contact Information</h1>
+        <p>Email: rahman@gmail.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        
+        
+    </div>
+
+
+</body>
+</html>
